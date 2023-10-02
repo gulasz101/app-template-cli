@@ -13,7 +13,7 @@ use Symfony\Component\HttpClient\HttpClient;
 #[AsCommand(name: 'say:hello-from-external-server')]
 class SayHelloFromExternalServerCommand extends Command
 {
-    public function __construct(readonly string $externalUrl)
+    public function __construct(readonly private string $externalUrl)
     {
         parent::__construct();
     }

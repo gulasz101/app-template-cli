@@ -52,7 +52,10 @@ class ExternalServerIsSayingHelloTest extends TestCase
                     __DIR__.'/../console.php',
                     'say:hello-from-external-server',
                 ],
-                env: ['CLI_EXTERNAL_API' => $externalApi],
+                env: [
+                    'CLI_EXTERNAL_API' => $externalApi,
+                    'CLI_DB_DSN' => 'sqlite::memory:',
+                ],
             );
             $process->mustRun();
 

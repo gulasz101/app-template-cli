@@ -20,7 +20,10 @@ class CommandIsSayingHelloTest extends TestCase
 
         $actualOutput = (new Process(
             command: ['php', __DIR__.'/../console.php', 'say:hello'],
-            env: ['CLI_EXTERNAL_API' => 'http://localhost/'],
+            env: [
+                'CLI_EXTERNAL_API' => 'http://localhost/',
+                'CLI_DB_DSN' => 'sqlite::memory:',
+            ],
         ))
             ->mustRun()
             ->getOutput()
