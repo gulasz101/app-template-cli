@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "589f3effaf8aa420cfe2e546446044d2",
+    "content-hash": "21400e72a10357936d23dbc133a5cb22",
     "packages": [
+        {
+            "name": "gulasz101/gettype",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gulasz101/gettype.git",
+                "reference": "e9ab80e1aff28544ac8ccf9a91dd417bed55477f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gulasz101/gettype/zipball/e9ab80e1aff28544ac8ccf9a91dd417bed55477f",
+                "reference": "e9ab80e1aff28544ac8ccf9a91dd417bed55477f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "./src/gettype.php"
+                ],
+                "psr-4": {
+                    "gulasz101\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Small quality of live improvement providing gettype function that returns enum.",
+            "keywords": [
+                "PHPStan",
+                "analyzer",
+                "enum",
+                "gettype",
+                "php",
+                "type"
+            ],
+            "support": {
+                "issues": "https://github.com/gulasz101/gettype/issues",
+                "source": "https://github.com/gulasz101/gettype/tree/v1.0.0"
+            },
+            "time": "2023-10-04T21:36:20+00:00"
+        },
         {
             "name": "psr/container",
             "version": "2.0.2",
